@@ -3,8 +3,8 @@ import { download } from '../assets'
 import{downloadImage} from '../utils'
 const Card = ({_id,name,prompt,photo}) => {
   return (
-    <div className='rounded-xl  group relative 
-    shadow-card hover:shadow-cardhover card'>
+    <div className=' z-10 transition ease-in-out delay-250 rounded-xl  group  relative
+    shadow-card hover:shadow-cardhover card hover:scale-105 '>
       <img
       className='w-full h-auto object-cover rounded-xl'
       src={photo}
@@ -12,7 +12,7 @@ const Card = ({_id,name,prompt,photo}) => {
       <div className="group-hover:flex flex-col max-h-[94.5%]
       hidden absolute bottom-0 left-0 right-0 bg-[#10131f]
       m-2 p-4 rounded-md">
-        <p className='text-white text-sm overflow-y-auto'>
+        <p className='text-white text-sm overflow-y-auto' href="">
           {prompt}
           </p>
           <div className='mt-5 flex justify-between items-center gap-2'>

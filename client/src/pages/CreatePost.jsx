@@ -130,8 +130,8 @@ const CreatePost = () => {
             <button
             type='button'
             onClick={generateImage}
-            className='text-white bg-green-700 font-medium
-            rounded-md text-sm w-full sm:w-auto px-5 py-2.5'
+            className=' transition ease-in-out delay-250 text-white bg-[#0049B7] font-medium
+            rounded-md text-sm w-full sm:w-auto px-5 py-2.5 hover:scale-105 hover:shadow-lg hover:bg-white hover:text-[#0049B7]'
             >
                 {generatingImg ? 'Generating...':'Generate'}
             </button>
@@ -141,9 +141,10 @@ const CreatePost = () => {
                 you can share it with others in the community</p>
                 <button 
                 type="submit"
-                className='mt-3 text-white bg-[#6469ff]
+                className='transition ease-in-out delay-250 
+                mt-3 text-white bg-[#0049B7]
                 font-medium rounded-md text-sm w-full sm:w-auto
-                px-5 py-2.5 text-center'
+                px-5 py-2.5 text-center hover:scale-105 hover:shadow-lg hover:bg-white hover:text-[#0049B7]'
                 >
                     {loading?'Sharing...':'Share with the community'}
                 </button>
