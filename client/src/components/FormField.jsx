@@ -14,8 +14,8 @@ const FormField = ({labelName,type,name,placeholder,value,handleChange,
           <button 
           type="button"
           onClick={handleSurpriseMe}
-          className="font-semibold text-xs bg-[#ECECF1] py-1
-          px-2 rounded-[5px] text-black">
+          className="font-semibold text-xs transition ease-in-out delay-250 bg-[#0049B7] py-1
+          px-2 rounded-[5px] text-white hover:scale-105 hover:shadow-lg hover:bg-white hover:text-[#0049B7]">
             Surprise me
           </button>
         )}
